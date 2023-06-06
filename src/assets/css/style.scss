@@ -2752,3 +2752,52 @@ h2 {
   }
 }
 
+// styles 06.06
+.error-block {
+  margin: 20px 0 0;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto 40px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0 0 30px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    color: #131313;
+  }
+  .button-blue {
+    display: inline-block;
+    margin: 30px 0 0 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .error-block {
+    img {
+      max-width: 560px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 44px;
+      margin: 0 0 20px 0;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .error-block {
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+}
+
+
+// end styles 06.06

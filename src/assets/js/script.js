@@ -216,6 +216,30 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    
+    /* 04.08 */
+    document.querySelector('body').addEventListener('click', e => {
+      if(e.target.closest('.labels-block__point_block')) {
+        e.preventDefault();
+        const collBlocks = document.querySelectorAll('.labels-block__point');
+        collBlocks.forEach(element => {
+          element.classList.remove('active')
+        });
+        e.target.closest('.labels-block__point').classList.add('active') 
+      }
+      if(e.target.closest('.product-close')) {
+        e.preventDefault();
+        const collBlocks = document.querySelectorAll('.labels-block__point');
+        collBlocks.forEach(element => {
+          element.classList.remove('active')
+        });
+      }
+      if (!e.target.closest('.labels-block__point_block') && !e.target.closest('.labels-block__point')) {
+        const collBlocks = document.querySelectorAll('.labels-block__point');
+        collBlocks.forEach(element => {
+          element.classList.remove('active')
+        });
+      }        
+  });
+
 });
 

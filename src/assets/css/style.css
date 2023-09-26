@@ -3738,5 +3738,29 @@ h2 {
 }
 /* end 04.08 */
 
+/* 26.09 */
+.product-page__content p.availability {
+  display: flex;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+.product-page__content p.availability img {
+  min-width: 16px;
+  max-width: 16px;
+  margin: 0 7px 0 0;
+}
+.product-page__content p.availability span.text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #131313;
+  font-weight: 500;
+}
+.product-page__content p.availability span.count {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3494a4;
+}
+/* end 26.09 */
 
 /*# sourceMappingURL=style.css.map */

@@ -238,8 +238,13 @@ document.addEventListener('DOMContentLoaded', () => {
         collBlocks.forEach(element => {
           element.classList.remove('active')
         });
-      }        
+      }       
+      /* 23 01 */
+      if(e.target.closest('.favorites')) {
+        e.preventDefault();
+        e.target.closest('.favorites').classList.toggle('active');
+      }
+      /* end 23 01 */ 
   });
-
 });
 

@@ -258,7 +258,15 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.category-produsts__sidebar__content').slideUp(300);
         $('body').removeClass('body-hidden');
       }
+      if(e.target.closest('.search-button')) {
+        e.preventDefault();
+        $('.search-result__block').fadeIn();
+      }
+      if (!e.target.closest('.search-result__block') && !e.target.closest('.search-button')) {
+        $('.search-result__block').fadeOut();
+      }
       /* end 07 05 2024 */
   });
+
 });
 

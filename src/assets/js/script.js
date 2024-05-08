@@ -245,6 +245,20 @@ document.addEventListener('DOMContentLoaded', () => {
         e.target.closest('.favorites').classList.toggle('active');
       }
       /* end 23 01 */ 
+
+      /* 07 05 2024 */
+      if(e.target.closest('.category-item__button')) {
+        e.target.closest('.category-item').classList.toggle('active');
+      }
+      if(e.target.closest('.category-produsts__sidebar__button')) {
+        $('.category-produsts__sidebar__content').slideDown(300);
+        $('body').addClass('body-hidden');
+      }
+      if(e.target.closest('.filter-caption__close')) {
+        $('.category-produsts__sidebar__content').slideUp(300);
+        $('body').removeClass('body-hidden');
+      }
+      /* end 07 05 2024 */
   });
 });
 

@@ -5123,3 +5123,60 @@ h2 {
   }
 }
 /* end 07 05 2024 */
+
+
+/* 24 06 2024 */
+.mobile-search {
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.header-block__result {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .mobile-search {
+    display: flex;
+  }
+  .header-block__contact {
+    margin: 0 35px 0 0;
+  }
+  .header__toggle {
+    right: 7px;
+  }
+  .header-block.active {
+    z-index: 50;
+  }
+}
+@media screen and (max-width: 575px) {
+  .header-block__contact {
+    display: flex;
+  }
+  .header-phones {
+    display: none;
+  }
+  .search-result {
+    padding: 20px 18px;
+    border-radius: 10px;
+  }
+  .header-block__result {
+    position: absolute;
+    top: 18px;
+  }
+  .search-result__dropdown {
+    top: 75px;
+    padding: 20px 18px;
+  }
+}
+
+/* end 24 06 2024 */

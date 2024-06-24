@@ -266,7 +266,23 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.search-result__block').fadeOut();
       }
       /* end 07 05 2024 */
+
+      /* 24 06 2024 */
+      if(e.target.closest('.mobile-search')) {
+        $('.header-block__result').fadeIn();
+        $('.header-block').addClass('active');
+        $('.menu-toggle-cont').removeClass('menu-toggle-cont_active'); 
+        $('.fixed-menu').slideUp(300);
+        $('body').removeClass('hidd');
+      }
+      if (!e.target.closest('.header-block__result') && !e.target.closest('.mobile-search')) {
+        $('.header-block__result').fadeOut();
+        $('.header-block').removeClass('active');
+      }
+      /* end 24 06 2024 */
   });
+
+
 
 });
 
